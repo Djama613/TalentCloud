@@ -45,8 +45,8 @@ class ApplicantProfileMenuComposer
             "portfolio" => [
                 "active" => false,
                 "link" =>route('profile.work_samples.edit', $view->getData()['applicant']),
-                "title" => "Go to the Portfolio section of your profile.",
-                "label" => "My Portfolio"
+                "title" => "Go to the Work Samples section of your profile.",
+                "label" => "My Work Samples"
             ]
         ];
 
