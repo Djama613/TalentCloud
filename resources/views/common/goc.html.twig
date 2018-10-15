@@ -35,7 +35,7 @@
 
                 {{ goc.talent_cloud }}
                 <i class="fas fa-cloud"></i>
-                {# {% if "manager" in app.request.uri %}
+                {% if WhichPortal.isManagerPortal() %}
                     {{ goc.admin_portal }}
                 {% else %}
                     {{ goc.portal }}
