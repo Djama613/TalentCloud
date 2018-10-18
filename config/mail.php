@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'no-reply@talent.canada.ca'),
+        'name' => env('MAIL_FROM_NAME', 'Talent Cloud'),
     ],
 
     /*
@@ -99,7 +99,8 @@ return [
     |
     */
 
-    'sendmail' => '/usr/sbin/sendmail -bs',
+    //'sendmail' => '/usr/sbin/sendmail -bs',
+    'sendmail' => '/usr/bin/sendmail -t -i',
 
     /*
     |--------------------------------------------------------------------------
